@@ -1,0 +1,79 @@
+﻿<Page x:Class="Module3.Client.Presentation.Views.UserControl.UserControlView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Height="1080" Width="1920">
+    <Grid>
+        <StackPanel Margin="0 30">
+            <TextBlock Text="СПИСОК ПОЛЬЗОВАТЕЛЕЙ"
+                       TextAlignment="Center"
+                       FontSize="55"
+                       FontWeight="Bold" />
+            
+            <DataGrid x:Name="UserDataGrid" 
+                      Margin="50" 
+                      Height="600"
+                      IsReadOnly="True"
+                      FontSize="50"
+                      AutoGenerateColumns="False"
+                      VerticalScrollBarVisibility="Visible"
+                      HorizontalScrollBarVisibility="Hidden"
+                      MouseDoubleClick="UserDataGrid_MouseDoubleClick">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Логин" Binding="{Binding Login}"/>
+                    <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}"/>
+                    <DataGridTextColumn Header="Имя" Binding="{Binding FirstName}"/>
+                    <DataGridTextColumn Header="Отчество" Binding="{Binding MiddleName}"/>
+                    <DataGridTextColumn Header="Роль" Binding="{Binding RoleName}"/>
+                    <DataGridTextColumn Header="Статус" Binding="{Binding Status}"/>
+                    <DataGridTextColumn Header="Первый логин" Binding="{Binding FirstLogin}"/>
+                    <DataGridTextColumn Header="Последний логин" Binding="{Binding LastLogin}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            
+            <StackPanel>
+                <Button x:Name="UpdateDataButton"
+                        Content="ОБНОВИТЬ"
+                        Height="100"
+                        Width="500"
+                        VerticalAlignment="Bottom"
+                        FontSize="45"
+                        FontWeight="Bold"
+                        FontFamily="Sitka Text"
+                        Click="UpdateDataButton_Click"/>
+        
+                <WrapPanel HorizontalAlignment="Center">
+                    <Button x:Name="AddUserButton"
+                            Content="ДОБАВИТЬ"
+                            Height="100"
+                            Width="500"
+                            VerticalAlignment="Bottom"
+                            Margin="0 10 0 10"
+                            FontSize="45"
+                            FontWeight="Bold"
+                            FontFamily="Sitka Text"
+                            Click="AddUserButton_Click"/>
+                    
+                    <Button x:Name="DeleteUserButton"
+                            Content="УДАЛИТЬ"
+                            Height="100"
+                            Width="500"
+                            VerticalAlignment="Bottom"
+                            Margin="10 0 0 10"
+                            FontSize="45"
+                            FontWeight="Bold"
+                            Click="DeleteUserButton_Click"/>
+                    
+                    <Button x:Name="GoBackButton"
+                            Content="НАЗАД"
+                            Height="100"
+                            Width="500"
+                            VerticalAlignment="Bottom"
+                            Margin="10 0 0 10"
+                            FontSize="45"
+                            FontWeight="Bold"
+                            Click="GoBackButton_Click"/>
+                </WrapPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

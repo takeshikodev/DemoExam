@@ -1,0 +1,114 @@
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.pdb
+*.opendb
+*.tlog
+*.log
+*.trx
+*.bak
+*.cache
+*.obj
+*.aps
+*.bsc
+*.sbr
+*.nupkg
+*.resharper
+*.resharper.user
+*.resharper.user.dotSettings
+*.testsettings
+*.vsmdi
+*.webtest
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.exe
+*.dll
+*.com
+*.ilk
+*.lib
+*.exp
+*.o
+*.out
+*.map
+*.ncb
+*.sdf
+*.vshost.*
+*.web.config
+*.publish.xml
+
+# NuGet packages
+packages/
+*.nupkg
+*.snupkg
+*.nuspec
+!.gitkeep # If you want to keep the packages folder for some reason (e.g., source control of binary dependencies)
+
+# Rider specific files
+.idea/
+
+# VS Code specific files
+.vscode/
+
+# Project-specific files
+*.csproj.user
+*.csproj.filters
+*.vcxproj.user
+*.vcxproj.filters
+
+# Temporary files
+temp/
+*.tmp
+*.temp
+
+# Resharper/dotCover/dotTrace etc.
+*.dotSettings
+*.DotSettings.user
+
+# Local project files
+*.local
+*.esproj
+*.vsix
+*.builds
+*.deployment
+*.dmv
+
+# Test results
+TestResults/
+*.testrunconfig
+
+# Local SQL Server files
+*.mdf
+*.ldf
+
+# Database tools
+.dbmdl
+.dbmdl.json
+
+# Azure tools
+.azure/
+
+# Node.js modules (if using JS/TS in your project)
+node_modules/
+
+# Mac OS files
+.DS_Store
+
+# Linux/Unix editor swap files
+*~
+#*#
+.#*
+*.swp
+*.swo
+
+# Recommended from gitignore.io for VisualStudio
+# https://www.gitignore.io/api/visualstudio
+# This template is very comprehensive and you might want to use it as a base.
+# It includes many of the above and more.

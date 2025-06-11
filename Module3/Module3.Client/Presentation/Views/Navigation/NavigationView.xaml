@@ -1,0 +1,9 @@
+﻿<Window x:Class="Module3.Client.Presentation.Views.Navigation.NavigationView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Height="1080" Width="1920"
+      WindowState="Maximized"
+      ResizeMode="CanMinimize">
+      <Frame x:Name="NavigationFrame" NavigationUIVisibility="Hidden"
+             Source="../Login/LoginView.xaml"/>
+</Window>
